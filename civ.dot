@@ -1,0 +1,130 @@
+digraph {
+    AdvancedFlight [label="AdvancedFlight\nUnit: Bomber, Carrier"]
+    Astronomy [label="Astronomy\nWonder: Copernicus' Obervatory"]
+    Automobile [label="Automobile\nUnit: Armor"]
+    BronzeWorking [label="BronzeWorking\nUnit: Phalanx\nWonder: Colossus"]
+    CeremonialBurial [label="CeremonialBurial\nImprovement: Temple"]
+    CodeOfLaws [label="CodeOfLaws\nImprovement: Courthouse"]
+    Combustion [label="Combustion\nUnit: Cruiser"]
+    Conscription [label="Conscription\nUnit: Rifleman"]
+    Currency [label="Currency\nImprovement: Marketplace"]
+    Flight [label="Flight\nUnit: Fighter"]
+    Gunpowder [label="Gunpowder\nUnit: Musketeers"]
+    Industrialization [label="Industrialization\nUnit: Transport\nImprovement: Factory\nWonder: Women's Suffrage"]
+    IronWorking [label="IronWorking\nUnit: Legion"]
+    Literacy [label="Literacy\nWonder: Great Library"]
+    Magnetism [label="Magnetism\nUnit: Frigate"]
+    MapMaking [label="MapMaking\nUnit: Trireme\nWonder: Lighthouse"]
+    Masonry [label="Masonry\nImprovement: City Walls, Palace\nWonder: Great Wall, Pyramids"]
+    Mathematics [label="Mathematics\nUnit: Catapult"]
+    Metallurgy [label="Metallurgy\nUnit: Cannon"]
+    Mysticism [label="Mysticism\nWonder: Oracle"]
+    Navigation [label="Navigation\nUnit: Sail\nWonder: Magellan's navigation"]
+    Pottery [label="Pottery\nImprovement: Granary\nWonder: Hanging Gardens"]
+    Refining [label="Refining\nImprovement: Power Plant"]
+    Religion [label="Religion\nImprovement: Cathedral\nWonder: Michaelangelo's chapel, JS Bach's Cathedral"]
+    SteamEngine [label="SteamEngine\nUnit: Ironclad"]
+    Steel [label="Steel\nUnit: Battleship"]
+    TheUniversity [label="TheUniversity\nImprovement: University"]
+    TheWheel [label="TheWheel\nUnit: Chariot"]
+    Writing [label="Writing\nUnit: Diplomacy\nImprovement: Library"]
+
+    AdvancedFlight -> Rocketry
+    Alphabet -> CodeOfLaws
+    Alphabet -> MapMaking
+    Alphabet -> Mathematics
+    Alphabet -> Writing
+    Astronomy -> Navigation
+    Astronomy -> TheoryOfGravity
+    AtomicTheory -> NuclearFission
+    Automobile -> MassProduction
+    Banking -> Industrialization
+    Banking -> TheCorporation
+    BridgeBuilding -> Railroad
+    BronzeWorking -> Currency
+    BronzeWorking -> IronWorking
+    CeremonialBurial -> Mysticism
+    CeremonialBurial -> TheMonarchy
+    Chemistry -> Explosives
+    Chemistry -> Refining
+    CodeOfLaws -> Literacy 
+    CodeOfLaws -> TheMonarchy
+    CodeOfLaws -> TheRepublic
+    CodeOfLaws -> Trade
+    Combustion -> Automobile
+    Combustion -> Flight
+    Construction -> BridgeBuilding
+    Construction -> Engineering
+    Currency -> Construction
+    Currency -> Trade
+    Electricity -> AdvancedFlight
+    Electronics -> Computers
+    Electronics -> Rocketry
+    Engineering -> Invention
+    Explosives -> Combustion
+    Explosives -> Refining
+    Explosives -> Conscription
+    Flight -> AdvancedFlight
+    Gunpowder -> Explosives
+    Gunpowder -> Metallurgy
+    Industrialization -> Communism
+    Industrialization -> Steel
+    Industrialization -> TheCorporation
+    Invention -> Gunpowder
+    Invention -> SteamEngine
+    IronWorking -> BridgeBuilding
+    IronWorking -> Gunpowder
+    Literacy -> Invention
+    Literacy -> Philosophy
+    Literacy -> TheDemocracy
+    Literacy -> TheRepublic
+    Magnetism -> Electricity
+    MapMaking -> Navigation
+    Masonry -> Construction
+    Masonry -> Feudalism
+    Masonry -> Mathematics
+    MassProduction -> NuclearFission
+    MassProduction -> Recycling
+    Mathematics -> Astronomy
+    Mathematics -> Computers
+    Mathematics -> Physics
+    Mathematics -> TheUniversity
+    Medicine -> Chemistry
+    Metallurgy -> Electricity
+    Metallurgy -> Steel
+    Mysticism -> Astronomy
+    Mysticism -> Philosophy
+    Navigation -> Magnetism
+    Navigation -> Navigation
+    Navigation -> Physics
+    Philosophy -> Communism
+    Philosophy -> Medicine
+    Philosophy -> Religion
+    Philosophy -> TheDemocracy
+    Philosophy -> TheUniversity
+    Physics -> AtomicTheory
+    Physics -> Flight
+    Physics -> Magnetism
+    Physics -> SteamEngine
+    Railroad -> Industrialization
+    Refining -> Combustion
+    Refining -> Plastics
+    SpaceFlight -> Plastics
+    SteamEngine -> Railroad
+    Steel -> Automobile
+    TheCorporation -> Automobile
+    TheCorporation -> Refining
+    TheMonarchy -> Feudalism
+    TheoryOfGravity -> AtomicTheory
+    TheRepublic -> Banking
+    TheRepublic -> Recycling
+    TheRepublic -> Conscription
+    TheUniversity -> Chemistry
+    TheUniversity -> Metallurgy
+    TheUniversity -> TheoryOfGravity
+    TheWheel -> Engineering
+    Trade -> Banking
+    Trade -> Medicine
+    Writing -> Literacy
+    Writing -> Religion
+}
