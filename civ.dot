@@ -2,6 +2,7 @@ digraph {
     AdvancedFlight [label="AdvancedFlight\nUnit: Bomber, Carrier"]
     Astronomy [label="Astronomy\nWonder: Copernicus' Obervatory"]
     Automobile [label="Automobile\nUnit: Armor"]
+    Banking [label="Banking\nImprovement: Bank"]
     BronzeWorking [label="BronzeWorking\nUnit: Phalanx\nWonder: Colossus"]
     CeremonialBurial [label="CeremonialBurial\nImprovement: Temple"]
     CodeOfLaws [label="CodeOfLaws\nImprovement: Courthouse"]
