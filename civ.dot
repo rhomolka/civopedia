@@ -1,34 +1,41 @@
 digraph {
-    AdvancedFlight [label="AdvancedFlight\nUnit: Bomber, Carrier"]
-    Astronomy [label="Astronomy\nWonder: Copernicus' Obervatory"]
-    Automobile [label="Automobile\nUnit: Armor"]
-    Banking [label="Banking\nImprovement: Bank"]
-    BronzeWorking [label="BronzeWorking\nUnit: Phalanx\nWonder: Colossus"]
-    CeremonialBurial [label="CeremonialBurial\nImprovement: Temple"]
-    CodeOfLaws [label="CodeOfLaws\nImprovement: Courthouse"]
-    Combustion [label="Combustion\nUnit: Cruiser"]
-    Conscription [label="Conscription\nUnit: Rifleman"]
-    Currency [label="Currency\nImprovement: Marketplace"]
-    Flight [label="Flight\nUnit: Fighter"]
-    Gunpowder [label="Gunpowder\nUnit: Musketeers"]
-    Industrialization [label="Industrialization\nUnit: Transport\nImprovement: Factory\nWonder: Women's Suffrage"]
-    IronWorking [label="IronWorking\nUnit: Legion"]
-    Literacy [label="Literacy\nWonder: Great Library"]
-    Magnetism [label="Magnetism\nUnit: Frigate"]
-    MapMaking [label="MapMaking\nUnit: Trireme\nWonder: Lighthouse"]
-    Masonry [label="Masonry\nImprovement: City Walls, Palace\nWonder: Great Wall, Pyramids"]
-    Mathematics [label="Mathematics\nUnit: Catapult"]
-    Metallurgy [label="Metallurgy\nUnit: Cannon"]
-    Mysticism [label="Mysticism\nWonder: Oracle"]
-    Navigation [label="Navigation\nUnit: Sail\nWonder: Magellan's navigation"]
-    Pottery [label="Pottery\nImprovement: Granary\nWonder: Hanging Gardens"]
-    Refining [label="Refining\nImprovement: Power Plant"]
-    Religion [label="Religion\nImprovement: Cathedral\nWonder: Michaelangelo's chapel, JS Bach's Cathedral"]
-    SteamEngine [label="SteamEngine\nUnit: Ironclad"]
-    Steel [label="Steel\nUnit: Battleship"]
-    TheUniversity [label="TheUniversity\nImprovement: University"]
-    TheWheel [label="TheWheel\nUnit: Chariot"]
-    Writing [label="Writing\nUnit: Diplomacy\nImprovement: Library"]
+    AdvancedFlight [label=< <B>AdvancedFlight</B><BR/>Unit: Bomber, Carrier>]
+    Alphabet [label=< <B>Alphabet</B> >]
+    Astronomy [label=< <B>Astronomy</B><BR/>Wonder: Copernicus' Obervatory>]
+    Automobile [label=< <B>Automobile</B><BR/>Unit: Armor>]
+    Banking [label=< <B>Banking</B><BR/>Improvement: Bank>]
+    BronzeWorking [label=< <B>BronzeWorking</B><BR/>Unit: Phalanx<BR/>Wonder: Colossus>]
+    CeremonialBurial [label=< <B>CeremonialBurial</B><BR/>Improvement: Temple>]
+    CodeOfLaws [label=< <B>CodeOfLaws</B><BR/>Improvement: Courthouse>]
+    Combustion [label=< <B>Combustion</B><BR/>Unit: Cruiser>]
+    Conscription [label=< <B>Conscription</B><BR/>Unit: Rifleman>]
+    Construction [label=< <B>Construction</B><BR/>Improvement: Aqueduct, Colosseum>]
+    Currency [label=< <B>Currency</B><BR/>Improvement: Marketplace>]
+    Electronics [label=< <B>Electronics</B><BR/>Improvement: Hydro Dam<BR/>Wonder: Hoover Dam>]
+    Flight [label=< <B>Flight</B><BR/>Unit: Fighter>]
+    Gunpowder [label=< <B>Gunpowder</B><BR/>Unit: Musketeers>]
+    Industrialization [label=< <B>Industrialization</B><BR/>Unit: Transport<BR/>Improvement: Factory<BR/>Wonder: Women's Suffrage>]
+    IronWorking [label=< <B>IronWorking</B><BR/>Unit: Legion>]
+    Literacy [label=< <B>Literacy</B><BR/>Wonder: Great Library>]
+    Magnetism [label=< <B>Magnetism</B><BR/>Unit: Frigate>]
+    MapMaking [label=< <B>MapMaking</B><BR/>Unit: Trireme<BR/>Wonder: Lighthouse>]
+    Masonry [label=< <B>Masonry</B><BR/>Improvement: City Walls, Palace<BR/>Wonder: Great Wall, Pyramids>]
+    MassProduction [label=< <B>MassProduction</B><BR/>Improvement: Mass Transit<BR/>Unit: Submarine>]
+    Mathematics [label=< <B>Mathematics</B><BR/>Unit: Catapult>]
+    Medicine [label=< <B>Medicine</B><BR/>Wonder: Shakespeare's Theater>]
+    Metallurgy [label=< <B>Metallurgy</B><BR/>Unit: Cannon>]
+    Mysticism [label=< <B>Mysticism</B><BR/>Wonder: Oracle>]
+    Navigation [label=< <B>Navigation</B><BR/>Unit: Sail<BR/>Wonder: Magellan's navigation>]
+    Pottery [label=< <B>Pottery</B><BR/>Improvement: Granary<BR/>Wonder: Hanging Gardens>]
+    Refining [label=< <B>Refining</B><BR/>Improvement: Power Plant>]
+    Religion [label=< <B>Religion</B><BR/>Improvement: Cathedral<BR/>Wonder: Michaelangelo's chapel, JS Bach's Cathedral>]
+    Rocketry [label=< <B>Rocketry</B><BR/>Unit: Nuclear>]
+    SpaceFlight [label=< <B>SpaceFlight</B><BR/>Improvement: SS Structural<BR/>Wonder: Apollo Program>]
+    SteamEngine [label=< <B>SteamEngine</B><BR/>Unit: Ironclad>]
+    Steel [label=< <B>Steel</B><BR/>Unit: Battleship>]
+    TheUniversity [label=< <B>TheUniversity</B><BR/>Improvement: University>]
+    TheWheel [label=< <B>TheWheel</B><BR/>Unit: Chariot>]
+    Writing [label=< <B>Writing</B><BR/>Unit: Diplomacy<BR/>Improvement: Library>]
 
     AdvancedFlight -> Rocketry
     Alphabet -> CodeOfLaws
@@ -54,13 +61,17 @@ digraph {
     CodeOfLaws -> Trade
     Combustion -> Automobile
     Combustion -> Flight
+    Computers -> SpaceFlight
     Construction -> BridgeBuilding
     Construction -> Engineering
     Currency -> Construction
     Currency -> Trade
     Electricity -> AdvancedFlight
+    Electricity -> Electronics
     Electronics -> Computers
+    Electronics -> NuclearPower
     Electronics -> Rocketry
+    Engineering -> Electronics
     Engineering -> Invention
     Explosives -> Combustion
     Explosives -> Refining
@@ -84,13 +95,16 @@ digraph {
     Masonry -> Construction
     Masonry -> Feudalism
     Masonry -> Mathematics
+    MassProduction -> LaborUnion
     MassProduction -> NuclearFission
     MassProduction -> Recycling
+    MassProduction -> SuperConductor
     Mathematics -> Astronomy
     Mathematics -> Computers
     Mathematics -> Physics
     Mathematics -> TheUniversity
     Medicine -> Chemistry
+    Medicine -> GeneticEngineering
     Metallurgy -> Electricity
     Metallurgy -> Steel
     Mysticism -> Astronomy
@@ -110,11 +124,14 @@ digraph {
     Railroad -> Industrialization
     Refining -> Combustion
     Refining -> Plastics
+    Rocketry -> SpaceFlight
     SpaceFlight -> Plastics
     SteamEngine -> Railroad
     Steel -> Automobile
     TheCorporation -> Automobile
     TheCorporation -> Refining
+    TheCorporation -> GeneticEngineering
+    TheCorporation -> MassProduction
     TheMonarchy -> Feudalism
     TheoryOfGravity -> AtomicTheory
     TheRepublic -> Banking
