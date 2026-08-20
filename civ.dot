@@ -9,6 +9,7 @@ digraph {
     CeremonialBurial [label=< <B>CeremonialBurial</B><BR/>Improvement: Temple>]
     CodeOfLaws [label=< <B>CodeOfLaws</B><BR/>Improvement: Courthouse>]
     Combustion [label=< <B>Combustion</B><BR/>Unit: Cruiser>]
+    Computers [label=< <B>Computers</B><BR/>Wonder: SETI Program >]
     Conscription [label=< <B>Conscription</B><BR/>Unit: Rifleman>]
     Construction [label=< <B>Construction</B><BR/>Improvement: Aqueduct, Colosseum>]
     Currency [label=< <B>Currency</B><BR/>Improvement: Marketplace>]
@@ -27,15 +28,21 @@ digraph {
     Metallurgy [label=< <B>Metallurgy</B><BR/>Unit: Cannon>]
     Mysticism [label=< <B>Mysticism</B><BR/>Wonder: Oracle>]
     Navigation [label=< <B>Navigation</B><BR/>Unit: Sail<BR/>Wonder: Magellan's navigation>]
+    Philosophy [label=< <B>Philosophy</B> >]
+    Physics [label=< <B>Physics</B> >]
     Pottery [label=< <B>Pottery</B><BR/>Improvement: Granary<BR/>Wonder: Hanging Gardens>]
+    Railroad [label=< <B>Railroad</B><BR/>Wonder: Darwin's Voyage>]
     Refining [label=< <B>Refining</B><BR/>Improvement: Power Plant>]
     Religion [label=< <B>Religion</B><BR/>Improvement: Cathedral<BR/>Wonder: Michaelangelo's chapel, JS Bach's Cathedral>]
+    Robotics [label=< <B>Robotics</B><BR/>Improvement: Mfg. Plant, SS Module<BR/>Unit: Artillery>]
     Rocketry [label=< <B>Rocketry</B><BR/>Unit: Nuclear>]
     SpaceFlight [label=< <B>SpaceFlight</B><BR/>Improvement: SS Structural<BR/>Wonder: Apollo Program>]
     SteamEngine [label=< <B>SteamEngine</B><BR/>Unit: Ironclad>]
     Steel [label=< <B>Steel</B><BR/>Unit: Battleship>]
+    TheDemocracy [label=< <B>TheDemocracy</B> >]
     TheUniversity [label=< <B>TheUniversity</B><BR/>Improvement: University>]
     TheWheel [label=< <B>TheWheel</B><BR/>Unit: Chariot>]
+    Trade [label=< <B>Trade</B><BR/>Unit: Caravan>]
     Writing [label=< <B>Writing</B><BR/>Unit: Diplomacy<BR/>Improvement: Library>]
 
     AdvancedFlight -> Rocketry
@@ -62,6 +69,7 @@ digraph {
     CodeOfLaws -> Trade
     Combustion -> Automobile
     Combustion -> Flight
+    Computers -> Robotics
     Computers -> SpaceFlight
     Construction -> BridgeBuilding
     Construction -> Engineering
@@ -133,6 +141,7 @@ digraph {
     TheCorporation -> Refining
     TheCorporation -> GeneticEngineering
     TheCorporation -> MassProduction
+    TheDemocracy -> Recycling
     TheMonarchy -> Feudalism
     TheoryOfGravity -> AtomicTheory
     TheRepublic -> Banking
