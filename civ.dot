@@ -5,19 +5,32 @@ digraph {
     AtomicTheory [label=< <B>AtomicTheory</B> >]
     Automobile [label=< <B>Automobile</B><BR/>Unit: Armor>]
     Banking [label=< <B>Banking</B><BR/>Improvement: Bank>]
+    BridgeBuilding [label=< <B>BridgeBuilding</B> >]
     BronzeWorking [label=< <B>BronzeWorking</B><BR/>Unit: Phalanx<BR/>Wonder: Colossus>]
     CeremonialBurial [label=< <B>CeremonialBurial</B><BR/>Improvement: Temple>]
+    Chemistry [label=< <B>Chemistry</B> >]
+    Chivalry [label=< <B>Chivalry</B><BR/>Unit: Knights >]
     CodeOfLaws [label=< <B>CodeOfLaws</B><BR/>Improvement: Courthouse>]
     Combustion [label=< <B>Combustion</B><BR/>Unit: Cruiser>]
+    Communism [label=< <B>Communism</B><BR/>Wonder: United Nations >]
     Computers [label=< <B>Computers</B><BR/>Wonder: SETI Program >]
     Conscription [label=< <B>Conscription</B><BR/>Unit: Rifleman>]
     Construction [label=< <B>Construction</B><BR/>Improvement: Aqueduct, Colosseum>]
     Currency [label=< <B>Currency</B><BR/>Improvement: Marketplace>]
+    Electricity [label=< <B>Electricity</B> >]
     Electronics [label=< <B>Electronics</B><BR/>Improvement: Hydro Plant<BR/>Wonder: Hoover Dam>]
+    Engineering [label=< <B>Engineering</B> >]
+    Explosives [label=< <B>Explosives</B> >]
     Flight [label=< <B>Flight</B><BR/>Unit: Fighter>]
+    Feudalism [label=< <B>Feudalism</B> >]
+    FusionPower [label=< <B>FusionPower</B> >]
+    GeneticEngineering [label=< <B>GeneticEngineering</B><BR/>Wonder: Cure for Cancer >]
     Gunpowder [label=< <B>Gunpowder</B><BR/>Unit: Musketeers>]
+    HorsebackRiding [label=< <B>HorsebackRiding</B><BR/>Unit: Cavalry >]
     Industrialization [label=< <B>Industrialization</B><BR/>Unit: Transport<BR/>Improvement: Factory<BR/>Wonder: Women's Suffrage>]
+    Invention [label=< <B>Invention</B> >]
     IronWorking [label=< <B>IronWorking</B><BR/>Unit: Legion>]
+    LaborUnion [label=< <B>LaborUnion</B><BR/>Unit: Mech. Infantry >]
     Literacy [label=< <B>Literacy</B><BR/>Wonder: Great Library>]
     Magnetism [label=< <B>Magnetism</B><BR/>Unit: Frigate>]
     MapMaking [label=< <B>MapMaking</B><BR/>Unit: Trireme<BR/>Wonder: Lighthouse>]
@@ -28,10 +41,14 @@ digraph {
     Metallurgy [label=< <B>Metallurgy</B><BR/>Unit: Cannon>]
     Mysticism [label=< <B>Mysticism</B><BR/>Wonder: Oracle>]
     Navigation [label=< <B>Navigation</B><BR/>Unit: Sail<BR/>Wonder: Magellan's navigation>]
+    NuclearFission [label=< <B>NuclearFission</B><BR/>Wonder: Manhattan Project >]
+    NuclearPower [label=< <B>NuclearPower</B><BR/>Improvement: Nuclear Plant >]
     Philosophy [label=< <B>Philosophy</B> >]
     Physics [label=< <B>Physics</B> >]
+    Plastics [label=< <B>Plastics</B><BR/>Improvement: SS Component >]
     Pottery [label=< <B>Pottery</B><BR/>Improvement: Granary<BR/>Wonder: Hanging Gardens>]
     Railroad [label=< <B>Railroad</B><BR/>Wonder: Darwin's Voyage>]
+    Recycling [label=< <B>Recycling</B><BR/>Improvement: Recycling Ctr. >]
     Refining [label=< <B>Refining</B><BR/>Improvement: Power Plant>]
     Religion [label=< <B>Religion</B><BR/>Improvement: Cathedral<BR/>Wonder: Michaelangelo's chapel, JS Bach's Cathedral>]
     Robotics [label=< <B>Robotics</B><BR/>Improvement: Mfg. Plant, SS Module<BR/>Unit: Artillery>]
@@ -39,7 +56,12 @@ digraph {
     SpaceFlight [label=< <B>SpaceFlight</B><BR/>Improvement: SS Structural<BR/>Wonder: Apollo Program>]
     SteamEngine [label=< <B>SteamEngine</B><BR/>Unit: Ironclad>]
     Steel [label=< <B>Steel</B><BR/>Unit: Battleship>]
+    SuperConductor [label=< <B>SuperConductor</B><BR/>Improvement: SDI Defense >]
+    TheoryOfGravity [label=< <B>TheoryOfGravity</B><BR/>Wonder: Isaac Newton's College >]
+    TheCorporation [label=< <B>TheCorporation</B> >]
     TheDemocracy [label=< <B>TheDemocracy</B> >]
+    TheMonarchy [label=< <B>TheMonarchy</B> >]
+    TheRepublic [label=< <B>TheRepublic</B> >]
     TheUniversity [label=< <B>TheUniversity</B><BR/>Improvement: University>]
     TheWheel [label=< <B>TheWheel</B><BR/>Unit: Chariot>]
     Trade [label=< <B>Trade</B><BR/>Unit: Caravan>]
@@ -69,6 +91,7 @@ digraph {
     CodeOfLaws -> Trade
     Combustion -> Automobile
     Combustion -> Flight
+    Communism -> LaborUnion
     Computers -> Robotics
     Computers -> SpaceFlight
     Construction -> BridgeBuilding
@@ -83,11 +106,12 @@ digraph {
     Engineering -> Electronics
     Engineering -> Invention
     Explosives -> Combustion
-    Explosives -> Refining
     Explosives -> Conscription
     Flight -> AdvancedFlight
+    Feudalism -> Chivalry
     Gunpowder -> Explosives
     Gunpowder -> Metallurgy
+    HorsebackRiding -> Chivalry
     Industrialization -> Communism
     Industrialization -> Steel
     Industrialization -> TheCorporation
@@ -119,8 +143,9 @@ digraph {
     Mysticism -> Astronomy
     Mysticism -> Philosophy
     Navigation -> Magnetism
-    Navigation -> Navigation
     Navigation -> Physics
+    NuclearFission -> NuclearPower
+    NuclearPower -> FusionPower
     Philosophy -> Communism
     Philosophy -> Medicine
     Philosophy -> Religion
@@ -130,6 +155,8 @@ digraph {
     Physics -> Flight
     Physics -> Magnetism
     Physics -> SteamEngine
+    Plastics -> Robotics
+    Plastics -> SuperConductor
     Railroad -> Industrialization
     Refining -> Combustion
     Refining -> Plastics
@@ -137,7 +164,7 @@ digraph {
     SpaceFlight -> Plastics
     SteamEngine -> Railroad
     Steel -> Automobile
-    TheCorporation -> Automobile
+    SuperConductor -> FusionPower
     TheCorporation -> Refining
     TheCorporation -> GeneticEngineering
     TheCorporation -> MassProduction
@@ -145,7 +172,6 @@ digraph {
     TheMonarchy -> Feudalism
     TheoryOfGravity -> AtomicTheory
     TheRepublic -> Banking
-    TheRepublic -> Recycling
     TheRepublic -> Conscription
     TheUniversity -> Chemistry
     TheUniversity -> Metallurgy
